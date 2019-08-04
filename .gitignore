@@ -1,0 +1,10 @@
+.idea/
+OneHandShooter.sln
+Assembly-CSharp.csproj
+Assembly-CSharp-firstpass.csproj
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp-Editor-firstpass.csproj
+OneHandShooter.sln.DotSettings.user
+Library/
+Logs/
+obj/
