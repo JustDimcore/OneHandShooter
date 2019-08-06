@@ -5,6 +5,8 @@ public class Player : MonoBehaviour
     public Transform RotationTarget;
     public float RotationSpeed;
     public float Speed;
+
+    public InputController InputController;
     
     private CharacterController _character;
     
@@ -27,9 +29,15 @@ public class Player : MonoBehaviour
 
     private void ProcessMovement()
     {
-        // TODO: Get input data
-        // TODO: Fill movement data
-        // TODO: Move character controller
+        if (InputController.MoveDirection.magnitude <= 0) 
+            return;
+        
+        // Move
+        var dir = new Vector3(InputController.MoveDirection.x, 0, InputController.MoveDirection.y);
+        _character.SimpleMove(dir * Speed);
+        
+        // Look at movement direction if no another target
+        _character.transform.LookAt(_character.transform.position + dir);
     }
 
     private void LookAtTarget()
