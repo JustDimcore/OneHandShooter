@@ -36,25 +36,30 @@ public class Player : MonoBehaviour
         var dir = new Vector3(InputController.MoveDirection.x, 0, InputController.MoveDirection.y);
         _character.SimpleMove(dir * Speed);
         
-        // Look at movement direction if no another target
-        _character.transform.LookAt(_character.transform.position + dir);
+        // Look at movement direction
+        LookAtPoint(_character.transform.position + dir);
     }
 
     private void LookAtTarget()
     {
-        if (RotationTarget == null)
+        if (RotationTarget == null || InputController.MoveDirection.magnitude > 0)
             return;
+        
+        LookAtPoint(RotationTarget.position);
+    }
 
+    private void LookAtPoint(Vector3 point)
+    {
         if (RotationSpeed > 0.0f)
         {
-            var positionDiff = RotationTarget.position - transform.position;
-            var rotation = Vector3.RotateTowards(transform.forward, positionDiff,
-                _rotationSpeedRad, 0.0f);
-            transform.eulerAngles = rotation;
+            var positionDiff = point - transform.position;
+            var smoothTarget = Vector3.RotateTowards(transform.forward, positionDiff,
+                _rotationSpeedRad * Time.fixedDeltaTime, 0.0f);
+            transform.rotation = Quaternion.LookRotation(smoothTarget);
         }
         else
         {
-            transform.LookAt(RotationTarget);
+            transform.LookAt(point);
         }
     }
 }
