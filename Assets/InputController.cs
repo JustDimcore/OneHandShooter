@@ -1,10 +1,13 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class InputController : Graphic, IPointerDownHandler, IDragHandler, IPointerUpHandler
 {
     public Knob Knob;
+
+    public event Action OnRelease; 
 
     private Vector2 _moveDirection;
     private Vector2 _pressPosition;
@@ -41,5 +44,6 @@ public class InputController : Graphic, IPointerDownHandler, IDragHandler, IPoin
     {
         Knob.gameObject.SetActive(false);
         _moveDirection = Vector2.zero;
+        OnRelease?.Invoke();
     }
 }
