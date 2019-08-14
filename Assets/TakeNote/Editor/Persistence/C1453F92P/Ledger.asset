@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 757c7930830877b47944add6103cde80, type: 3}
+  m_Name: Ledger
+  m_EditorClassIdentifier: 
+  OutstandingTasks:
+  - Title: Replace character controller with rigidbody
+    CreationDate: 10.08.2019 | 4:42
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 0
+    DrawColor: {r: 1, g: 1, b: 1, a: 1}
+  - Title: Rotate door with hinge
+    CreationDate: 10.08.2019 | 4:45
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 0
+    DrawColor: {r: 1, g: 1, b: 1, a: 1}
+  - Title: Create basic level geometry
+    CreationDate: 10.08.2019 | 4:47
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 0
+    DrawColor: {r: 1, g: 1, b: 1, a: 1}
+  - Title: Mask the character
+    CreationDate: 10.08.2019 | 4:48
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 0
+    DrawColor: {r: 1, g: 1, b: 1, a: 1}
+  - Title: Add hands moving to enemies
+    CreationDate: 10.08.2019 | 4:48
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 0
+    DrawColor: {r: 1, g: 1, b: 1, a: 1}
+  - Title: Add player shooting
+    CreationDate: 10.08.2019 | 4:49
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 0
+    DrawColor: {r: 1, g: 1, b: 1, a: 1}
+  - Title: Add enemies shooting
+    CreationDate: 10.08.2019 | 4:49
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 0
+    DrawColor: {r: 1, g: 1, b: 1, a: 1}
+  - Title: Stairs moving
+    CreationDate: 10.08.2019 | 4:51
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 0
+    DrawColor: {r: 1, g: 1, b: 1, a: 1}
+  - Title: Loot drop
+    CreationDate: 10.08.2019 | 4:51
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 0
+    DrawColor: {r: 1, g: 1, b: 1, a: 1}
+  - Title: Screen shake
+    CreationDate: 10.08.2019 | 4:51
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 0
+    DrawColor: {r: 1, g: 1, b: 1, a: 1}
+  - Title: Slow motion
+    CreationDate: 10.08.2019 | 4:51
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 0
+    DrawColor: {r: 1, g: 1, b: 1, a: 1}
+  CompletedTasks: []
+  DeferredTasks: []
