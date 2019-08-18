@@ -4,17 +4,24 @@ using UnityEngine;
 
 public class Player : MonoBehaviour, ITarget
 {
+    public enum PlayerAnimations
+    {
+        IdlePistol = 1,
+        Walk = 2,
+    }
+    
     public Transform RotationTarget;
     public float RotationSpeed;
     public float Speed;
     public float MaxShotDistance = 10f;
+    public Animator Animator;
     
     public InputController InputController;
     public List<Enemy> Enemies = new List<Enemy>();
     
     private CharacterController _character;
     private RaycastHit[] _raycastHits = new RaycastHit[10];
-
+    
 
     public Vector3 Position
     {
@@ -78,13 +85,23 @@ public class Player : MonoBehaviour, ITarget
     private void FixedUpdate()
     {
         LookAtTarget();
-        ProcessMovement();
+        var moved = ProcessMovement();
+        
+        // Animation
+        if (moved)
+        {
+            Animator.SetInteger("Main", (int) PlayerAnimations.Walk);
+        }
+        else
+        {
+            Animator.SetInteger("Main", (int) PlayerAnimations.IdlePistol);
+        }
     }
 
-    private void ProcessMovement()
+    private bool ProcessMovement()
     {
         if (InputController.MoveDirection.magnitude <= 0) 
-            return;
+            return false;
         
         // Move
         var dir = new Vector3(InputController.MoveDirection.x, 0, InputController.MoveDirection.y);
@@ -92,6 +109,7 @@ public class Player : MonoBehaviour, ITarget
         
         // Look at movement direction
         LookAtPoint(_character.transform.position + dir);
+        return true;
     }
 
     private void LookAtTarget()
