@@ -22,6 +22,12 @@ public class Enemy : MonoBehaviour, ITarget
     protected void Start()
     {
         Health = MaxHealth;
+        StartImpl();
+    }
+
+    protected virtual void StartImpl()
+    {
+        
     }
 
     public void MarkAsTarget(bool mark)
