@@ -58,21 +58,18 @@ public class InputController : Graphic, IPointerDownHandler, IDragHandler, IPoin
         _lastPosition = eventData.position;
 
         _inputLog.Add(new InputStamp {Position = _lastPosition, Time = Time.time});
-        var swipeTime = Time.time - _inputLog[0].Time;
-        while (swipeTime > SwipeTime)
-        {
-            _inputLog.RemoveAt(0);
-            swipeTime = Time.time - _inputLog[0].Time;
-        }
+        var minSwipeTime = Time.time - SwipeTime;
+        while (_inputLog[0].Time < minSwipeTime)
+             _inputLog.RemoveAt(0);
 
-        var diff = _inputLog[0].Position - eventData.position;
+        var diff = eventData.position - _inputLog[0].Position;
         var swipeLength = diff.magnitude;
         var swipeLengthRatio = swipeLength / Screen.width;
 
         if (swipeLengthRatio >= SwipeLength)
         {
-            OnSwipe?.Invoke(_inputLog[0].Position - eventData.position);
-            Debug.Log("Swipe " + swipeLengthRatio + " for " + swipeTime + " seconds.");
+            OnSwipe?.Invoke(diff.normalized);
+            Debug.Log("Swipe " + swipeLengthRatio + " for " + (Time.time - _inputLog[0].Time) + " seconds.");
         }
     }
 

@@ -7635,6 +7635,8 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   Knob: {fileID: 1080416557}
+  SwipeTime: 0.15
+  SwipeLength: 0.2
 --- !u!222 &1172571565
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9887,14 +9889,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a245dd002f9996a4b9b698af0100ce2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RotationTarget: {fileID: 0}
-  RotationSpeed: 720
-  Speed: 3
-  MaxShotDistance: 10
   Animator: {fileID: 1187242383}
   InputController: {fileID: 1172571564}
-  Enemies: []
+  RotationSpeed: 720
+  DashRotationSpeed: 2000
+  Speed: 3
+  MaxShotDistance: 10
   AimPointOffset: {x: 0, y: 0.4, z: 0}
+  DashSpeed: 12
+  DashTime: 0.15
+  DashCooldown: 0.5
+  Enemies: []
+  RotationTarget: {fileID: 0}
 --- !u!1001 &5320957095688519009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9967,6 +9973,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2843688071263561171, guid: 7f4717a6f36461e409d941477d95d2d2,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2843688071263561171, guid: 7f4717a6f36461e409d941477d95d2d2,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2843688071263561171, guid: 7f4717a6f36461e409d941477d95d2d2,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8123254665910616879, guid: 7f4717a6f36461e409d941477d95d2d2,
         type: 3}
       propertyPath: m_Radius
@@ -10026,21 +10047,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2843688071263561171, guid: 7f4717a6f36461e409d941477d95d2d2,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2843688071263561171, guid: 7f4717a6f36461e409d941477d95d2d2,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2843688071263561171, guid: 7f4717a6f36461e409d941477d95d2d2,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7108155890184434315, guid: 7f4717a6f36461e409d941477d95d2d2,
         type: 3}
