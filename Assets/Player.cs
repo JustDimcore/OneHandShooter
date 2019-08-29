@@ -38,7 +38,9 @@ public class Player : MonoBehaviour, ITarget
 
     [Header("Set by scripts")] 
     public List<Enemy> Enemies = new List<Enemy>();
-    public Transform RotationTarget;
+
+    private Enemy _selectedEnemy;
+    private Transform _rotationTarget;
 
     private CharacterController _character;
     private bool _dashOnCooldown;
@@ -78,7 +80,8 @@ public class Player : MonoBehaviour, ITarget
             .OrderBy(enemy => (enemy.transform.position - transform.position).magnitude)
             .FirstOrDefault();
 
-        RotationTarget = nearestTarget?.transform;
+        _selectedEnemy = nearestTarget;
+        _rotationTarget = nearestTarget?.transform;
         foreach (var enemy in Enemies)
         {
             enemy.MarkAsTarget(enemy == nearestTarget);
@@ -180,10 +183,10 @@ public class Player : MonoBehaviour, ITarget
 
     private void LookAtTarget()
     {
-        if (RotationTarget == null || InputController.MoveDirection.magnitude > 0)
+        if (_rotationTarget == null || InputController.MoveDirection.magnitude > 0)
             return;
 
-        LookAtPoint(RotationTarget.position, RotationSpeed);
+        LookAtPoint(_rotationTarget.position, RotationSpeed);
     }
 
     private void LookAtPoint(Vector3 point, float rotationSpeed)
