@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor;
 using UnityEngine;
 
 public class Player : MonoBehaviour, ITarget
@@ -26,12 +27,19 @@ public class Player : MonoBehaviour, ITarget
 
     [Header("Player Config")] 
     public float RotationSpeed;
-    public float DashRotationSpeed;
     public float Speed;
-    public float MaxShotDistance = 10f;
+    
+    [Header("Shooting")]
     public Vector3 AimPointOffset;
-
+    // TODO: Move it to weapon
+    public float MaxShotDistance = 5f;
+    public float ShotCooldown = 0.3f;
+    public int Damage = 15;
+    public Bullet Projectile;
+    public Transform ShotSourcePoint;
+    
     [Header("Dash")] 
+    public float DashRotationSpeed;
     public float DashSpeed = 8f;
     public float DashTime = 0.2f;
     public float DashCooldown;
@@ -44,6 +52,7 @@ public class Player : MonoBehaviour, ITarget
 
     private CharacterController _character;
     private bool _dashOnCooldown;
+    private float _lastShotTime;
 
     public Vector3 DashDirection { get; protected set; }
 
@@ -110,23 +119,33 @@ public class Player : MonoBehaviour, ITarget
 
     private bool IsTargetAvailable(Enemy target)
     {
-        var diff = target.Position - Position;
-        var raycastHits = Physics.RaycastAll(Position, diff, Mathf.Min(MaxShotDistance, diff.magnitude));
+        var diff = target.Position - ShotSourcePoint.position;
+        if (diff.magnitude > MaxShotDistance)
+            return false;
+        
+        var mask = 1 << LayerMask.NameToLayer("Default");
+        var raycastHits = Physics.RaycastAll(ShotSourcePoint.position, diff, Mathf.Min(MaxShotDistance, diff.magnitude), mask);
         return raycastHits.All(hit => hit.transform == target.transform || hit.transform == transform);
     }
 
+    #if UNITY_EDITOR
     private void OnDrawGizmos()
     {
+        var available = false;
         foreach (var enemy in Enemies)
         {
             var direct = IsTargetAvailable(enemy);
-            Debug.DrawLine(Position, enemy.Position, direct ? Color.green : Color.red);
+            if (direct)
+                available = true;
+            Debug.DrawLine(ShotSourcePoint.position, enemy.Position, direct ? Color.green : Color.red);
         }
+        Handles.color = new Color(available ? 0 : 255, available ? 255 : 0, 0, 0.1f);
+        Handles.DrawSolidDisc(ShotSourcePoint.position, transform.up, MaxShotDistance);
     }
+    #endif
 
     private void FixedUpdate()
     {
-        LookAtTarget();
         var moveType = ProcessMovement();
 
         // Animation
@@ -144,6 +163,41 @@ public class Player : MonoBehaviour, ITarget
             default:
                 throw new ArgumentOutOfRangeException();
         }
+
+        if (moveType == MoveType.None)
+        {
+            if (_selectedEnemy == null) 
+                SelectTarget();
+            
+            LookAtTarget();
+            ShotIfPossible();
+        }
+    }
+
+    private void ShotIfPossible()
+    {
+        if (_selectedEnemy == null || _selectedEnemy.Health <= 0)
+            return;
+
+        if (!IsTargetAvailable(_selectedEnemy))
+            return;
+
+        var timeDiff = Time.fixedTime - _lastShotTime;
+        if (timeDiff > ShotCooldown)
+        {
+            Shot();
+            _lastShotTime = Time.fixedTime;
+        }
+    }
+
+    private void Shot()
+    {
+        var pos = ShotSourcePoint.position;
+        var direction = (_selectedEnemy.transform.position - pos).normalized;
+        var instance = Instantiate(Projectile, pos, Quaternion.LookRotation(direction));
+        var bullet = instance.GetComponent<Bullet>();
+        bullet.Damage = Damage;
+        bullet.Move();
     }
 
     private MoveType ProcessMovement()
@@ -183,7 +237,7 @@ public class Player : MonoBehaviour, ITarget
 
     private void LookAtTarget()
     {
-        if (_rotationTarget == null || InputController.MoveDirection.magnitude > 0)
+        if (_rotationTarget == null)
             return;
 
         LookAtPoint(_rotationTarget.position, RotationSpeed);
@@ -193,6 +247,7 @@ public class Player : MonoBehaviour, ITarget
     {
         if (RotationSpeed > 0.0f)
         {
+            point.y = transform.position.y;
             var positionDiff = point - transform.position;
             var smoothTarget = Vector3.RotateTowards(transform.forward, positionDiff,
                 rotationSpeed * Mathf.Deg2Rad * Time.fixedDeltaTime, 0.0f);

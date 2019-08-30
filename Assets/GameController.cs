@@ -8,6 +8,14 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
+        foreach (var enemy in Enemies)
+        {
+            enemy.SubscribeOnDeath(en =>
+            {
+                Enemies.Remove(en);
+                SetEnemies();
+            });
+        }
         SetEnemies();
     }
 

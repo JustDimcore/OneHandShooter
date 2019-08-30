@@ -45,7 +45,7 @@ public class Enemy : MonoBehaviour, ITarget
         _onDeath = null;
     }
 
-    public void DealDamage(int damage)
+    public virtual void DealDamage(int damage)
     {
         Health = Math.Max(Health - damage, 0);
         if (Health == 0)
@@ -57,5 +57,6 @@ public class Enemy : MonoBehaviour, ITarget
     private void Death()
     {
         _onDeath?.Invoke(this);
+        Destroy(gameObject);
     }
 }

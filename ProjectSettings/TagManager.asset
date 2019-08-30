@@ -15,9 +15,9 @@ TagManager:
   - 
   - PostProcessing
   - AutoTrigger
-  - 
-  - 
-  - 
+  - Enemy
+  - Floor
+  - Bullet
   - 
   - 
   - 

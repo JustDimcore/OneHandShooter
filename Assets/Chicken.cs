@@ -3,6 +3,8 @@ using UnityEngine.AI;
 
 public class Chicken : Enemy
 {
+    public Animation DamageAnimation; 
+
     private NavMeshAgent _navMeshAgent;
 
     protected override void StartImpl()
@@ -29,5 +31,11 @@ public class Chicken : Enemy
         NavMesh.SamplePosition(pos, out hit, 2, NavMesh.AllAreas);
         _navMeshAgent.destination = hit.position;
         _navMeshAgent.isStopped = false;
+    }
+
+    public override void DealDamage(int damage)
+    {
+        base.DealDamage(damage);
+        DamageAnimation.Play();
     }
 }
