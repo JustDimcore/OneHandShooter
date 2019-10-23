@@ -84,7 +84,7 @@ AvatarMask:
   - m_Path: Armature.001/Bone_root/Spine/Chest/Arm1.R/Arm2.R
     m_Weight: 0
   - m_Path: Armature.001/Bone_root/Spine/Chest/Arm1.R/Arm2.R/Arm3.R
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: Armature.001/Bone_root/Spine/Chest/Arm1.R/Arm2.R/Arm3.R/Hand.R
     m_Weight: 1
   - m_Path: Armature.001/Bone_root/Spine/Chest/Arm1.R/Arm2.R/Arm3.R/Hand.R/Index1.R
@@ -186,9 +186,9 @@ AvatarMask:
   - m_Path: Armature.001/IK.L/IK.L_end
     m_Weight: 1
   - m_Path: Armature.001/IK.R
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: Armature.001/IK.R/IK.R_end
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: Armature.001/IK_Leg.L
     m_Weight: 1
   - m_Path: Armature.001/IK_Leg.L/Knee.L

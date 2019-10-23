@@ -11,7 +11,8 @@ public class Player : MonoBehaviour, ITarget
     {
         IdlePistol = 1,
         Walk = 2,
-        Dash = 3
+        Dash = 3,
+        Shot = 4
     }
 
     public enum MoveType
@@ -28,16 +29,17 @@ public class Player : MonoBehaviour, ITarget
     [Header("Player Config")] 
     public float RotationSpeed;
     public float Speed;
-    
-    [Header("Shooting")]
+
+    [Header("Shooting")] 
     public Vector3 AimPointOffset;
+
     // TODO: Move it to weapon
     public float MaxShotDistance = 5f;
     public float ShotCooldown = 0.3f;
     public int Damage = 15;
     public Bullet Projectile;
     public Transform ShotSourcePoint;
-    
+
     [Header("Dash")] 
     public float DashRotationSpeed;
     public float DashSpeed = 8f;
@@ -122,13 +124,14 @@ public class Player : MonoBehaviour, ITarget
         var diff = target.Position - ShotSourcePoint.position;
         if (diff.magnitude > MaxShotDistance)
             return false;
-        
+
         var mask = 1 << LayerMask.NameToLayer("Default");
-        var raycastHits = Physics.RaycastAll(ShotSourcePoint.position, diff, Mathf.Min(MaxShotDistance, diff.magnitude), mask);
+        var raycastHits = Physics.RaycastAll(ShotSourcePoint.position, diff,
+            Mathf.Min(MaxShotDistance, diff.magnitude), mask);
         return raycastHits.All(hit => hit.transform == target.transform || hit.transform == transform);
     }
 
-    #if UNITY_EDITOR
+#if UNITY_EDITOR
     private void OnDrawGizmos()
     {
         var available = false;
@@ -139,55 +142,66 @@ public class Player : MonoBehaviour, ITarget
                 available = true;
             Debug.DrawLine(ShotSourcePoint.position, enemy.Position, direct ? Color.green : Color.red);
         }
+
         Handles.color = new Color(available ? 0 : 255, available ? 255 : 0, 0, 0.1f);
         Handles.DrawSolidDisc(ShotSourcePoint.position, transform.up, MaxShotDistance);
     }
-    #endif
+#endif
 
     private void FixedUpdate()
     {
         var moveType = ProcessMovement();
 
-        // Animation
-        switch (moveType)
-        {
-            case MoveType.None:
-                Animator.SetInteger("Main", (int) PlayerAnimations.IdlePistol);
-                break;
-            case MoveType.Walk:
-                Animator.SetInteger("Main", (int) PlayerAnimations.Walk);
-                break;
-            case MoveType.Dash:
-                Animator.SetInteger("Main", (int) PlayerAnimations.Dash);
-                break;
-            default:
-                throw new ArgumentOutOfRangeException();
-        }
-
+        var shot = false;
         if (moveType == MoveType.None)
         {
-            if (_selectedEnemy == null) 
+            if (_selectedEnemy == null)
                 SelectTarget();
-            
+
             LookAtTarget();
-            ShotIfPossible();
+            shot = ShotIfPossible();
+        }
+
+
+        if (shot)
+        {
+            Animator.SetInteger("Main", (int) PlayerAnimations.Shot);
+        }
+        else
+        {
+            // Animation
+            switch (moveType)
+            {
+                case MoveType.None:
+                    Animator.SetInteger("Main", (int) PlayerAnimations.IdlePistol);
+                    break;
+                case MoveType.Walk:
+                    Animator.SetInteger("Main", (int) PlayerAnimations.Walk);
+                    break;
+                case MoveType.Dash:
+                    Animator.SetInteger("Main", (int) PlayerAnimations.Dash);
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
         }
     }
 
-    private void ShotIfPossible()
+    private bool ShotIfPossible()
     {
         if (_selectedEnemy == null || _selectedEnemy.Health <= 0)
-            return;
+            return false;
 
         if (!IsTargetAvailable(_selectedEnemy))
-            return;
+            return false;
 
         var timeDiff = Time.fixedTime - _lastShotTime;
-        if (timeDiff > ShotCooldown)
-        {
-            Shot();
-            _lastShotTime = Time.fixedTime;
-        }
+        if (!(timeDiff > ShotCooldown))
+            return false;
+
+        Shot();
+        _lastShotTime = Time.fixedTime;
+        return true;
     }
 
     private void Shot()
@@ -220,7 +234,7 @@ public class Player : MonoBehaviour, ITarget
         // Move
         var dir = new Vector3(DashDirection.x, 0, DashDirection.y);
         _character.SimpleMove(dir * DashSpeed);
-        
+
         // Look at movement direction
         LookAtPoint(_character.transform.position + dir, DashRotationSpeed);
     }

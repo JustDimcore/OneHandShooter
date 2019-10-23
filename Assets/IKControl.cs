@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(Animator))] 
+
 public class IKControl : MonoBehaviour {
     
     protected Animator animator;
@@ -24,7 +25,7 @@ public class IKControl : MonoBehaviour {
 
                 // Set the look target position, if one has been assigned
                 if(lookObj != null) {
-                    animator.SetLookAtWeight(1);
+                    animator.SetLookAtWeight(0.5f, 0, 1, 0.3f);
                     animator.SetLookAtPosition(lookObj.position);
                 }    
 
