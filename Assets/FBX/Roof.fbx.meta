@@ -1,16 +1,43 @@
 fileFormatVersion: 2
-guid: 915911457d3a36e438e41e82dd546ec1
+guid: 48620773fa9b03e45bdd1fb64bbfd2ae
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: No Name
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: gun.001
-    7400000: gun.001|All animations .001
-    9500000: //RootNode
+    100000: Chimney001.001
+    100002: Collider_house
+    100004: //RootNode
+    100006: Roof1 Loose Tiles001.004
+    100008: Roof1 Upper  tiles.008
+    100010: Roof1.001
+    100012: Wooden Support Pillars.001
+    400000: Chimney001.001
+    400002: Collider_house
+    400004: //RootNode
+    400006: Roof1 Loose Tiles001.004
+    400008: Roof1 Upper  tiles.008
+    400010: Roof1.001
+    400012: Wooden Support Pillars.001
+    2100000: Roof material.005
+    2100002: Tileable_ Wooden Block.004
+    2100004: No Name
+    2300000: Chimney001.001
+    2300002: Collider_house
+    2300004: Roof1 Loose Tiles001.004
+    2300006: Roof1 Upper  tiles.008
+    2300008: Roof1.001
+    2300010: Wooden Support Pillars.001
+    3300000: Chimney001.001
+    3300002: Collider_house
+    3300004: Roof1 Loose Tiles001.004
+    3300006: Roof1 Upper  tiles.008
+    3300008: Roof1.001
+    3300010: Wooden Support Pillars.001
+    4300000: Roof1.001
+    4300002: Chimney001.001
+    4300004: Roof1 Upper  tiles.008
+    4300006: Roof1 Loose Tiles001.004
+    4300008: Wooden Support Pillars.001
+    4300010: Collider_house
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -63,8 +90,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.005
-    hasPreviousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -91,7 +118,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

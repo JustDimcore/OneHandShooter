@@ -1,16 +1,14 @@
 fileFormatVersion: 2
-guid: 915911457d3a36e438e41e82dd546ec1
+guid: 4ca1042fb56303c46b768eda911ed189
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: No Name
+    2100000: Tree
     2300000: //RootNode
     3300000: //RootNode
-    4300000: gun.001
-    7400000: gun.001|All animations .001
-    9500000: //RootNode
+    4300000: TREE3_small.001
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -63,8 +61,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.005
-    hasPreviousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -91,7 +89,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

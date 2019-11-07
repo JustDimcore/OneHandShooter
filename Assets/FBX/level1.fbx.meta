@@ -1,16 +1,43 @@
 fileFormatVersion: 2
-guid: 915911457d3a36e438e41e82dd546ec1
+guid: 7aa46e23868ec5643bac808ec745e9de
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
+    100000: Collider_ground_1_0
+    100002: Collider_ground_1_1
+    100004: Collider_ground_1_1.001
+    100006: Collider_ground_1_1.002
+    100008: ground_1_0
+    100010: ground_1_1
+    100012: //RootNode
+    400000: Collider_ground_1_0
+    400002: Collider_ground_1_1
+    400004: Collider_ground_1_1.001
+    400006: Collider_ground_1_1.002
+    400008: ground_1_0
+    400010: ground_1_1
+    400012: //RootNode
     2100000: No Name
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: gun.001
-    7400000: gun.001|All animations .001
-    9500000: //RootNode
+    2100002: ground_with_detal
+    2100004: ground.001
+    2300000: Collider_ground_1_0
+    2300002: Collider_ground_1_1
+    2300004: Collider_ground_1_1.001
+    2300006: Collider_ground_1_1.002
+    2300008: ground_1_0
+    2300010: ground_1_1
+    3300000: Collider_ground_1_0
+    3300002: Collider_ground_1_1
+    3300004: Collider_ground_1_1.001
+    3300006: Collider_ground_1_1.002
+    3300008: ground_1_0
+    3300010: ground_1_1
+    4300000: Collider_ground_1_0
+    4300002: Collider_ground_1_1.001
+    4300004: Collider_ground_1_1
+    4300006: Collider_ground_1_1.002
+    4300008: ground_1_0
+    4300010: ground_1_1
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -63,8 +90,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.005
-    hasPreviousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -91,7 +118,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
