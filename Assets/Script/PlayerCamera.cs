@@ -7,6 +7,10 @@ public class PlayerCamera : MonoBehaviour
 
     private Vector3 _targetPosition;
     
+    void Awake() {
+        ResetOffset();
+    }
+    
     void Update()
     {
         _targetPosition = Target.position + Offset;
