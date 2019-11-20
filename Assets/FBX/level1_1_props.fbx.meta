@@ -1,0 +1,369 @@
+fileFormatVersion: 2
+guid: 80b0d9ca5d03c6b42b24f4f55e16315b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Chimney001.001
+    100002: Collider_fence
+    100004: Collider_fence.001
+    100006: Collider_fence.002
+    100008: Collider_fence.003
+    100010: Collider_fence.004
+    100012: Collider_house
+    100014: Fence_gate_s2
+    100016: Fence_gate_s2.001
+    100018: //RootNode
+    100020: Roof1 Loose Tiles001.004
+    100022: Roof1 Upper  tiles.008
+    100024: Roof1.001
+    100026: Shadow leaf
+    100028: Shadow leaf.001
+    100030: Shadow leaf.002
+    100032: Shadow leaf.003
+    100034: Shadow leaf.004
+    100036: Shadow leaf.005
+    100038: Shadow leaf.006
+    100040: Shadow leaf.007
+    100042: Shadow leaf.008
+    100044: Shadow leaf.009
+    100046: Shadow leaf.010
+    100048: Shadow leaf.011
+    100050: Shadow leaf.012
+    100052: Shadow leaf.013
+    100054: Shadow leaf.014
+    100056: Shadow leaf.015
+    100058: Shadow leaf.016
+    100060: Shadow leaf.017
+    100062: Shadow leaf.018
+    100064: Shadow leaf.019
+    100066: Shadow leaf.020
+    100068: Shadow leaf.021
+    100070: Shadow leaf.022
+    100072: TREE2_LOW.006
+    100074: TREE3_small
+    100076: TREE3_small.001
+    100078: Tree_big
+    100080: Tree_Low
+    100082: Tree_Low.001
+    100084: Tree_Low.002
+    100086: Tree_Low.003
+    100088: Tree_Low.004
+    100090: Tree_Med
+    100092: Tree_Med.001
+    100094: Tree_Med.002
+    100096: Tree_Med.003
+    100098: Tree_Med.004
+    100100: Tree_Med.005
+    100102: Tree_Med.006
+    100104: Tree_Med.007
+    100106: Tree_Med.008
+    100108: Wooden Support Pillars.001
+    400000: Chimney001.001
+    400002: Collider_fence
+    400004: Collider_fence.001
+    400006: Collider_fence.002
+    400008: Collider_fence.003
+    400010: Collider_fence.004
+    400012: Collider_house
+    400014: Fence_gate_s2
+    400016: Fence_gate_s2.001
+    400018: //RootNode
+    400020: Roof1 Loose Tiles001.004
+    400022: Roof1 Upper  tiles.008
+    400024: Roof1.001
+    400026: Shadow leaf
+    400028: Shadow leaf.001
+    400030: Shadow leaf.002
+    400032: Shadow leaf.003
+    400034: Shadow leaf.004
+    400036: Shadow leaf.005
+    400038: Shadow leaf.006
+    400040: Shadow leaf.007
+    400042: Shadow leaf.008
+    400044: Shadow leaf.009
+    400046: Shadow leaf.010
+    400048: Shadow leaf.011
+    400050: Shadow leaf.012
+    400052: Shadow leaf.013
+    400054: Shadow leaf.014
+    400056: Shadow leaf.015
+    400058: Shadow leaf.016
+    400060: Shadow leaf.017
+    400062: Shadow leaf.018
+    400064: Shadow leaf.019
+    400066: Shadow leaf.020
+    400068: Shadow leaf.021
+    400070: Shadow leaf.022
+    400072: TREE2_LOW.006
+    400074: TREE3_small
+    400076: TREE3_small.001
+    400078: Tree_big
+    400080: Tree_Low
+    400082: Tree_Low.001
+    400084: Tree_Low.002
+    400086: Tree_Low.003
+    400088: Tree_Low.004
+    400090: Tree_Med
+    400092: Tree_Med.001
+    400094: Tree_Med.002
+    400096: Tree_Med.003
+    400098: Tree_Med.004
+    400100: Tree_Med.005
+    400102: Tree_Med.006
+    400104: Tree_Med.007
+    400106: Tree_Med.008
+    400108: Wooden Support Pillars.001
+    2100000: Tree
+    2100002: Tree.001
+    2100004: Roof material.005
+    2100006: Tileable_ Wooden Block.004
+    2100008: No Name
+    2100010: Plank.004
+    2300000: Chimney001.001
+    2300002: Collider_fence
+    2300004: Collider_fence.001
+    2300006: Collider_fence.002
+    2300008: Collider_fence.003
+    2300010: Collider_fence.004
+    2300012: Collider_house
+    2300014: Fence_gate_s2
+    2300016: Fence_gate_s2.001
+    2300018: Roof1 Loose Tiles001.004
+    2300020: Roof1 Upper  tiles.008
+    2300022: Roof1.001
+    2300024: Shadow leaf
+    2300026: Shadow leaf.001
+    2300028: Shadow leaf.002
+    2300030: Shadow leaf.003
+    2300032: Shadow leaf.004
+    2300034: Shadow leaf.005
+    2300036: Shadow leaf.006
+    2300038: Shadow leaf.007
+    2300040: Shadow leaf.008
+    2300042: Shadow leaf.009
+    2300044: Shadow leaf.010
+    2300046: Shadow leaf.011
+    2300048: Shadow leaf.012
+    2300050: Shadow leaf.013
+    2300052: Shadow leaf.014
+    2300054: Shadow leaf.015
+    2300056: Shadow leaf.016
+    2300058: Shadow leaf.017
+    2300060: Shadow leaf.018
+    2300062: Shadow leaf.019
+    2300064: Shadow leaf.020
+    2300066: Shadow leaf.021
+    2300068: Shadow leaf.022
+    2300070: TREE2_LOW.006
+    2300072: TREE3_small
+    2300074: TREE3_small.001
+    2300076: Tree_big
+    2300078: Tree_Low
+    2300080: Tree_Low.001
+    2300082: Tree_Low.002
+    2300084: Tree_Low.003
+    2300086: Tree_Low.004
+    2300088: Tree_Med
+    2300090: Tree_Med.001
+    2300092: Tree_Med.002
+    2300094: Tree_Med.003
+    2300096: Tree_Med.004
+    2300098: Tree_Med.005
+    2300100: Tree_Med.006
+    2300102: Tree_Med.007
+    2300104: Tree_Med.008
+    2300106: Wooden Support Pillars.001
+    3300000: Chimney001.001
+    3300002: Collider_fence
+    3300004: Collider_fence.001
+    3300006: Collider_fence.002
+    3300008: Collider_fence.003
+    3300010: Collider_fence.004
+    3300012: Collider_house
+    3300014: Fence_gate_s2
+    3300016: Fence_gate_s2.001
+    3300018: Roof1 Loose Tiles001.004
+    3300020: Roof1 Upper  tiles.008
+    3300022: Roof1.001
+    3300024: Shadow leaf
+    3300026: Shadow leaf.001
+    3300028: Shadow leaf.002
+    3300030: Shadow leaf.003
+    3300032: Shadow leaf.004
+    3300034: Shadow leaf.005
+    3300036: Shadow leaf.006
+    3300038: Shadow leaf.007
+    3300040: Shadow leaf.008
+    3300042: Shadow leaf.009
+    3300044: Shadow leaf.010
+    3300046: Shadow leaf.011
+    3300048: Shadow leaf.012
+    3300050: Shadow leaf.013
+    3300052: Shadow leaf.014
+    3300054: Shadow leaf.015
+    3300056: Shadow leaf.016
+    3300058: Shadow leaf.017
+    3300060: Shadow leaf.018
+    3300062: Shadow leaf.019
+    3300064: Shadow leaf.020
+    3300066: Shadow leaf.021
+    3300068: Shadow leaf.022
+    3300070: TREE2_LOW.006
+    3300072: TREE3_small
+    3300074: TREE3_small.001
+    3300076: Tree_big
+    3300078: Tree_Low
+    3300080: Tree_Low.001
+    3300082: Tree_Low.002
+    3300084: Tree_Low.003
+    3300086: Tree_Low.004
+    3300088: Tree_Med
+    3300090: Tree_Med.001
+    3300092: Tree_Med.002
+    3300094: Tree_Med.003
+    3300096: Tree_Med.004
+    3300098: Tree_Med.005
+    3300100: Tree_Med.006
+    3300102: Tree_Med.007
+    3300104: Tree_Med.008
+    3300106: Wooden Support Pillars.001
+    4300000: TREE3_small
+    4300002: TREE2_LOW.006
+    4300004: Tree_Low
+    4300006: Tree_Med
+    4300008: Tree_Med.001
+    4300010: Tree_Med.002
+    4300012: Tree_Med.003
+    4300014: Tree_Med.004
+    4300016: Tree_Med.005
+    4300018: Tree_Med.006
+    4300020: Tree_Low.001
+    4300022: Tree_Low.002
+    4300024: Tree_Low.003
+    4300026: Tree_Low.004
+    4300028: Tree_Med.007
+    4300030: Tree_Med.008
+    4300032: Shadow leaf
+    4300034: Shadow leaf.001
+    4300036: Shadow leaf.002
+    4300038: Shadow leaf.003
+    4300040: Shadow leaf.004
+    4300042: Shadow leaf.005
+    4300044: Shadow leaf.006
+    4300046: Shadow leaf.007
+    4300048: Shadow leaf.008
+    4300050: Shadow leaf.009
+    4300052: Shadow leaf.010
+    4300054: Shadow leaf.011
+    4300056: Shadow leaf.012
+    4300058: Shadow leaf.013
+    4300060: Shadow leaf.014
+    4300062: TREE3_small.001
+    4300064: Tree_big
+    4300066: Shadow leaf.015
+    4300068: Shadow leaf.016
+    4300070: Shadow leaf.017
+    4300072: Shadow leaf.018
+    4300074: Shadow leaf.019
+    4300076: Shadow leaf.020
+    4300078: Shadow leaf.021
+    4300080: Shadow leaf.022
+    4300082: Roof1.001
+    4300084: Chimney001.001
+    4300086: Roof1 Upper  tiles.008
+    4300088: Roof1 Loose Tiles001.004
+    4300090: Wooden Support Pillars.001
+    4300092: Collider_house
+    4300094: Collider_fence.001
+    4300096: Collider_fence
+    4300098: Collider_fence.002
+    4300100: Collider_fence.003
+    4300102: Collider_fence.004
+    4300104: Fence_gate_s2.001
+    4300106: Fence_gate_s2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
