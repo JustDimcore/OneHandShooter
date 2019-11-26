@@ -58,6 +58,10 @@ ModelImporter:
     100104: Tree_Med.007
     100106: Tree_Med.008
     100108: Wooden Support Pillars.001
+    100110: Shadow leaf.023
+    100112: Shadow leaf.024
+    100114: Shadow leaf.025
+    100116: Tree_Low.005
     400000: Chimney001.001
     400002: Collider_fence
     400004: Collider_fence.001
@@ -113,6 +117,10 @@ ModelImporter:
     400104: Tree_Med.007
     400106: Tree_Med.008
     400108: Wooden Support Pillars.001
+    400110: Shadow leaf.023
+    400112: Shadow leaf.024
+    400114: Shadow leaf.025
+    400116: Tree_Low.005
     2100000: Tree
     2100002: Tree.001
     2100004: Roof material.005
@@ -173,6 +181,10 @@ ModelImporter:
     2300102: Tree_Med.007
     2300104: Tree_Med.008
     2300106: Wooden Support Pillars.001
+    2300108: Shadow leaf.023
+    2300110: Shadow leaf.024
+    2300112: Shadow leaf.025
+    2300114: Tree_Low.005
     3300000: Chimney001.001
     3300002: Collider_fence
     3300004: Collider_fence.001
@@ -227,6 +239,10 @@ ModelImporter:
     3300102: Tree_Med.007
     3300104: Tree_Med.008
     3300106: Wooden Support Pillars.001
+    3300108: Shadow leaf.023
+    3300110: Shadow leaf.024
+    3300112: Shadow leaf.025
+    3300114: Tree_Low.005
     4300000: TREE3_small
     4300002: TREE2_LOW.006
     4300004: Tree_Low
@@ -281,6 +297,10 @@ ModelImporter:
     4300102: Collider_fence.004
     4300104: Fence_gate_s2.001
     4300106: Fence_gate_s2
+    4300108: Shadow leaf.023
+    4300110: Shadow leaf.024
+    4300112: Shadow leaf.025
+    4300114: Tree_Low.005
   externalObjects: {}
   materials:
     importMaterials: 1
