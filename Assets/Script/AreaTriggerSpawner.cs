@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
+using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -25,7 +26,7 @@ public class AreaTriggerSpawner: MonoBehaviour, IEnemiesGenerator
     [Serializable]
     public class ChancePair
     {
-        public int Weight;
+        public int Weight = 1;
         public GameObject Prefab;
     }
 
@@ -45,20 +46,42 @@ public class AreaTriggerSpawner: MonoBehaviour, IEnemiesGenerator
     
     private void OnTriggerEnter(Collider other)
     {
+        // exec if player entered
         if (!other.GetComponent<Player>()) 
             return;
         
-        if (_wavesIndex < Waves.Count && _instances?.Count == 0 && !_isWaitingWave)
+        Debug.Log("Spawn area triggered");
+        var hasWaves = _wavesIndex < Waves.Count;
+        var allDead = _instances == null || _instances?.Count == 0;
+        if (hasWaves && allDead && !_isWaitingWave)
         {
             StartCoroutine(StartNextWave());
         }
     }
 
-    public void Spawn(Wave wave)
+    private IEnumerator StartNextWave()
     {
+        var wave = Waves[_wavesIndex];
+        Debug.Log("Wait before wave " + wave.WaitForSeconds + " seconds");
+
+        // wait cooldown
+        if (wave.WaitForSeconds > 0)
+        {
+            _isWaitingWave = true;
+            yield return new WaitForSeconds(wave.WaitForSeconds);
+            _isWaitingWave = false;
+        }
+        
+        Spawn(wave);
+        _wavesIndex++;
+    }
+
+    private void Spawn(Wave wave)
+    {
+        Debug.Log("Spawn wave");
         _instances = wave.Points
-            .Select(config => Instantiate(GetPrefab(config.Preset)))
-            .Select(inst => GetComponent<Enemy>())
+            .Select(config => Instantiate(GetRandomPrefab(config.Preset), config.Point.position, Quaternion.identity))
+            .Select(inst => inst.GetComponent<Enemy>())
             .ToList();
         
         foreach (var enemy in _instances)
@@ -72,26 +95,24 @@ public class AreaTriggerSpawner: MonoBehaviour, IEnemiesGenerator
         _instances.Remove(enemy);
         if (_instances.Count == 0)
         {
-            StartNextWave();
+            StartCoroutine(StartNextWave());
         }
     }
 
-    private IEnumerator StartNextWave()
+    [ContextMenu("Test")]
+    public void TestRandomGenerator()
     {
-        var wave = Waves[_wavesIndex];
-
-        if (wave.WaitForSeconds > 0)
+        foreach (var wave in Waves)
         {
-            _isWaitingWave = true;
-            yield return new WaitForSeconds(wave.WaitForSeconds);
-            _isWaitingWave = false;
+            foreach (var point in wave.Points)
+            {
+                var randomPrefab = GetRandomPrefab(point.Preset);
+                Debug.LogError(randomPrefab.name);
+            }
         }
-        
-        Spawn(wave);
-        _wavesIndex++;
     }
 
-    private GameObject GetPrefab(List<ChancePair> presets)
+    private GameObject GetRandomPrefab(List<ChancePair> presets)
     {
         var sumWeight = presets.Sum(pair => pair.Weight);
         var val = Random.Range(0, sumWeight);

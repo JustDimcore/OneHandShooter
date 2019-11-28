@@ -134,6 +134,9 @@ public class Player : MonoBehaviour, ITarget
 #if UNITY_EDITOR
     private void OnDrawGizmos()
     {
+        if (Selection.activeGameObject != gameObject)
+            return;
+        
         var available = false;
         foreach (var enemy in Enemies)
         {
