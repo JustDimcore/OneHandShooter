@@ -3,12 +3,15 @@ using UnityEngine.UI;
  
 public class FPSDisplay : MonoBehaviour
 {
-  public int avgFrameRate;
   public Text display_Text;
- 
+
+  private float _previousValue;
+  private float _currentVelocity;
+
   public void Update ()
   {
-    var fps = Time.frameCount / Time.time;
+    var fps = Mathf.SmoothDamp(_previousValue, 1f / Time.deltaTime, ref _currentVelocity, 0.2f);
+    _previousValue = fps;
     display_Text.text = (int)fps + " FPS";
   }
 }
