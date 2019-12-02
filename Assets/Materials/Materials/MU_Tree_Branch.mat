@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MU_Fence
-  m_Shader: {fileID: 4800000, guid: 06dd85fdb00669649ad29947894b2bcd, type: 3}
+  m_Name: MU_Tree_Branch
+  m_Shader: {fileID: 4800000, guid: b467ef5b5e7a86c41ab6b69a60650c02, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -23,8 +23,16 @@ Material:
         m_Texture: {fileID: 2800000, guid: 9703dac6646926f45936846d7727a979, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - Texture2D_6CADC8E8:
+        m_Texture: {fileID: 2800000, guid: b48502c41df6f5a4fb099045349383a9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_81E7BB0A:
+        m_Texture: {fileID: 2800000, guid: bd0e145dc3684d648ac15bbd998d1509, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - Texture2D_9EED3AA9:
-        m_Texture: {fileID: 2800000, guid: 8045e10eebd24724a8b0a5cf15046f8f, type: 3}
+        m_Texture: {fileID: 2800000, guid: bd5e9151d772eac4bb948bbb69c35311, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_A48DE22A:
@@ -36,7 +44,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_EEFB4DA1:
-        m_Texture: {fileID: 2800000, guid: 5d619b9e726af9c4ba9a7790c056cb42, type: 3}
+        m_Texture: {fileID: 2800000, guid: d1305102fec77ea469785fc9161b3bf8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_F0ADF62C:
+        m_Texture: {fileID: 2800000, guid: 8045e10eebd24724a8b0a5cf15046f8f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -80,13 +92,20 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_33443301: 0
     - Vector1_3A658882: 0.137
+    - Vector1_52205C8C: 0
     - Vector1_560C5437: 0.656
+    - Vector1_A44C345E: 0.1
     - Vector1_B9DA5C77: 0.419
+    - Vector1_B9EB8403: 0
+    - Vector1_C2620C3C: 0.704
     - Vector1_C3250141: 0.63
-    - Vector1_C57F42C6: 0.201
+    - Vector1_C57F42C6: 0.419
+    - Vector1_D36DD6E5: 0.699
     - Vector1_EE538D3D: 1.94
-    - Vector1_EF826E94: 3
+    - Vector1_EF826E94: 1.94
+    - Vector1_F2439DA1: 0
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1

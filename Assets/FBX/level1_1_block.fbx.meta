@@ -12,6 +12,10 @@ ModelImporter:
     100012: Collision_Bush_3x
     100014: Collision_Bush_5x
     100016: //RootNode
+    100018: Bush_1x_Leaf
+    100020: Bush_2x_Leaf
+    100022: Bush_3x_Leaf
+    100024: Bush_5x_Leaf
     400000: Bush_1x
     400002: Bush_2x
     400004: Bush_3x
@@ -21,6 +25,10 @@ ModelImporter:
     400012: Collision_Bush_3x
     400014: Collision_Bush_5x
     400016: //RootNode
+    400018: Bush_1x_Leaf
+    400020: Bush_2x_Leaf
+    400022: Bush_3x_Leaf
+    400024: Bush_5x_Leaf
     2100000: No Name
     2100002: bush.001
     2300000: Bush_1x
@@ -31,6 +39,10 @@ ModelImporter:
     2300010: Collision_Bush_2x
     2300012: Collision_Bush_3x
     2300014: Collision_Bush_5x
+    2300016: Bush_1x_Leaf
+    2300018: Bush_2x_Leaf
+    2300020: Bush_3x_Leaf
+    2300022: Bush_5x_Leaf
     3300000: Bush_1x
     3300002: Bush_2x
     3300004: Bush_3x
@@ -39,6 +51,10 @@ ModelImporter:
     3300010: Collision_Bush_2x
     3300012: Collision_Bush_3x
     3300014: Collision_Bush_5x
+    3300016: Bush_1x_Leaf
+    3300018: Bush_2x_Leaf
+    3300020: Bush_3x_Leaf
+    3300022: Bush_5x_Leaf
     4300000: Collision_Bush_1x
     4300002: Collision_Bush_2x
     4300004: Collision_Bush_3x
@@ -47,6 +63,10 @@ ModelImporter:
     4300010: Bush_2x
     4300012: Bush_5x
     4300014: Bush_3x
+    4300016: Bush_3x_Leaf
+    4300018: Bush_5x_Leaf
+    4300020: Bush_2x_Leaf
+    4300022: Bush_1x_Leaf
   externalObjects: {}
   materials:
     importMaterials: 1
