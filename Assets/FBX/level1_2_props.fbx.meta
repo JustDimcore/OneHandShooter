@@ -1,0 +1,310 @@
+fileFormatVersion: 2
+guid: 45f28f5e9075843409469ccda77861d3
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Shadow leaf.015
+    100004: Shadow leaf.030
+    100006: Shadow leaf.031
+    100008: Shadow leaf.033
+    100010: Shadow leaf.034
+    100012: Shadow leaf.036
+    100014: Shadow leaf.037
+    100016: Shadow leaf.038
+    100018: Shadow leaf.039
+    100020: Shadow leaf.040
+    100022: Shadow leaf.041
+    100024: Shadow leaf.042
+    100026: Shadow leaf.043
+    100028: Shadow leaf.047
+    100030: Shadow leaf.050
+    100032: Shadow leaf.053
+    100034: Shadow leaf.054
+    100036: Shadow leaf.057
+    100038: TREE2_LOW.001
+    100040: TREE2_LOW.002
+    100042: TREE3_small.002
+    100044: TREE3_small.003
+    100046: tree_leafTtree_leafRtree_leafEtree_leafEtree_leaf3tree_leaf.001
+    100048: tree_leafTtree_leafRtree_leafEtree_leafEtree_leaf3tree_leaf.002
+    100050: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.008
+    100052: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.009
+    100054: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.013
+    100056: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.018
+    100058: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.019
+    100060: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.020
+    100062: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.021
+    100064: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.023
+    100066: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.024
+    100068: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.025
+    100070: Tree_Low.002
+    100072: Tree_Low.006
+    100074: Tree_Med.013
+    100076: Tree_Med.014
+    100078: Tree_Med.015
+    100080: Tree_Med.016
+    100082: Tree_Med.017
+    100084: Tree_Med.018
+    100086: Tree_Med.019
+    400000: //RootNode
+    400002: Shadow leaf.015
+    400004: Shadow leaf.030
+    400006: Shadow leaf.031
+    400008: Shadow leaf.033
+    400010: Shadow leaf.034
+    400012: Shadow leaf.036
+    400014: Shadow leaf.037
+    400016: Shadow leaf.038
+    400018: Shadow leaf.039
+    400020: Shadow leaf.040
+    400022: Shadow leaf.041
+    400024: Shadow leaf.042
+    400026: Shadow leaf.043
+    400028: Shadow leaf.047
+    400030: Shadow leaf.050
+    400032: Shadow leaf.053
+    400034: Shadow leaf.054
+    400036: Shadow leaf.057
+    400038: TREE2_LOW.001
+    400040: TREE2_LOW.002
+    400042: TREE3_small.002
+    400044: TREE3_small.003
+    400046: tree_leafTtree_leafRtree_leafEtree_leafEtree_leaf3tree_leaf.001
+    400048: tree_leafTtree_leafRtree_leafEtree_leafEtree_leaf3tree_leaf.002
+    400050: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.008
+    400052: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.009
+    400054: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.013
+    400056: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.018
+    400058: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.019
+    400060: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.020
+    400062: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.021
+    400064: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.023
+    400066: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.024
+    400068: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.025
+    400070: Tree_Low.002
+    400072: Tree_Low.006
+    400074: Tree_Med.013
+    400076: Tree_Med.014
+    400078: Tree_Med.015
+    400080: Tree_Med.016
+    400082: Tree_Med.017
+    400084: Tree_Med.018
+    400086: Tree_Med.019
+    2100000: Tree
+    2100002: Tree.001
+    2300000: Shadow leaf.015
+    2300002: Shadow leaf.030
+    2300004: Shadow leaf.031
+    2300006: Shadow leaf.033
+    2300008: Shadow leaf.034
+    2300010: Shadow leaf.036
+    2300012: Shadow leaf.037
+    2300014: Shadow leaf.038
+    2300016: Shadow leaf.039
+    2300018: Shadow leaf.040
+    2300020: Shadow leaf.041
+    2300022: Shadow leaf.042
+    2300024: Shadow leaf.043
+    2300026: Shadow leaf.047
+    2300028: Shadow leaf.050
+    2300030: Shadow leaf.053
+    2300032: Shadow leaf.054
+    2300034: Shadow leaf.057
+    2300036: TREE2_LOW.001
+    2300038: TREE2_LOW.002
+    2300040: TREE3_small.002
+    2300042: TREE3_small.003
+    2300044: tree_leafTtree_leafRtree_leafEtree_leafEtree_leaf3tree_leaf.001
+    2300046: tree_leafTtree_leafRtree_leafEtree_leafEtree_leaf3tree_leaf.002
+    2300048: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.008
+    2300050: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.009
+    2300052: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.013
+    2300054: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.018
+    2300056: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.019
+    2300058: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.020
+    2300060: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.021
+    2300062: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.023
+    2300064: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.024
+    2300066: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.025
+    2300068: Tree_Low.002
+    2300070: Tree_Low.006
+    2300072: Tree_Med.013
+    2300074: Tree_Med.014
+    2300076: Tree_Med.015
+    2300078: Tree_Med.016
+    2300080: Tree_Med.017
+    2300082: Tree_Med.018
+    2300084: Tree_Med.019
+    3300000: Shadow leaf.015
+    3300002: Shadow leaf.030
+    3300004: Shadow leaf.031
+    3300006: Shadow leaf.033
+    3300008: Shadow leaf.034
+    3300010: Shadow leaf.036
+    3300012: Shadow leaf.037
+    3300014: Shadow leaf.038
+    3300016: Shadow leaf.039
+    3300018: Shadow leaf.040
+    3300020: Shadow leaf.041
+    3300022: Shadow leaf.042
+    3300024: Shadow leaf.043
+    3300026: Shadow leaf.047
+    3300028: Shadow leaf.050
+    3300030: Shadow leaf.053
+    3300032: Shadow leaf.054
+    3300034: Shadow leaf.057
+    3300036: TREE2_LOW.001
+    3300038: TREE2_LOW.002
+    3300040: TREE3_small.002
+    3300042: TREE3_small.003
+    3300044: tree_leafTtree_leafRtree_leafEtree_leafEtree_leaf3tree_leaf.001
+    3300046: tree_leafTtree_leafRtree_leafEtree_leafEtree_leaf3tree_leaf.002
+    3300048: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.008
+    3300050: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.009
+    3300052: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.013
+    3300054: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.018
+    3300056: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.019
+    3300058: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.020
+    3300060: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.021
+    3300062: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.023
+    3300064: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.024
+    3300066: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.025
+    3300068: Tree_Low.002
+    3300070: Tree_Low.006
+    3300072: Tree_Med.013
+    3300074: Tree_Med.014
+    3300076: Tree_Med.015
+    3300078: Tree_Med.016
+    3300080: Tree_Med.017
+    3300082: Tree_Med.018
+    3300084: Tree_Med.019
+    4300000: TREE3_small.002
+    4300002: TREE2_LOW.001
+    4300004: Tree_Low.002
+    4300006: Tree_Med.013
+    4300008: Tree_Med.014
+    4300010: Tree_Med.015
+    4300012: Tree_Med.016
+    4300014: Tree_Med.017
+    4300016: Tree_Low.006
+    4300018: Tree_Med.018
+    4300020: Tree_Med.019
+    4300022: TREE3_small.003
+    4300024: TREE2_LOW.002
+    4300026: Shadow leaf.015
+    4300028: Shadow leaf.030
+    4300030: Shadow leaf.031
+    4300032: Shadow leaf.033
+    4300034: Shadow leaf.034
+    4300036: Shadow leaf.036
+    4300038: Shadow leaf.037
+    4300040: Shadow leaf.038
+    4300042: Shadow leaf.039
+    4300044: Shadow leaf.040
+    4300046: Shadow leaf.041
+    4300048: Shadow leaf.042
+    4300050: Shadow leaf.043
+    4300052: Shadow leaf.047
+    4300054: Shadow leaf.050
+    4300056: Shadow leaf.053
+    4300058: Shadow leaf.054
+    4300060: Shadow leaf.057
+    4300062: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.008
+    4300064: tree_leafTtree_leafRtree_leafEtree_leafEtree_leaf3tree_leaf.001
+    4300066: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.009
+    4300068: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.013
+    4300070: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.018
+    4300072: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.019
+    4300074: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.020
+    4300076: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.021
+    4300078: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.023
+    4300080: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.024
+    4300082: tree_leafTtree_leafrtree_leafetree_leafetree_leaf_tree_leaf.025
+    4300084: tree_leafTtree_leafRtree_leafEtree_leafEtree_leaf3tree_leaf.002
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
